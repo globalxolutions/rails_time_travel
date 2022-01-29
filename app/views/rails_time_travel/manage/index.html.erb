@@ -35,13 +35,13 @@
 </div>
 
 <div class="buttons">
-  <% [1, 2, 5, 10, 20, 30, 50, 100, 365].each do |e| %>
+  <% [1, 2, 3, 4, 5, 6, 7, 10, 20, 30, 50, 100, 365].each do |e| %>
     <%= button_to "-#{pluralize e, 'day'}", { action: :set_datetime, seconds: e.days.to_i }, { class: "button is-success" } %>
   <% end %>
 </div>
 
 <div class="buttons">
-  <% [1, 2, 3, 5].each do |e| %>
+  <% [1, 2, 3, 4, 5, 6, 7].each do |e| %>
     <%= button_to "-#{pluralize e, 'year'}", { action: :set_datetime, seconds: e.year.to_i }, { class: "button is-warning" } %>
   <% end %>
 </div>
